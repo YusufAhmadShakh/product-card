@@ -3,8 +3,6 @@ body {
   color: #515076;
   padding: 40px;
   background-color: #F7F7FA;
-
-  
 }
 
 @font-face {
@@ -21,13 +19,11 @@ body {
   margin: 0;
   text-align: center;
   color:#353451
-  
 }
 
 .list {
   list-style: none;
   display: flex;
-  
 }
 
 .cards {
@@ -66,8 +62,6 @@ body {
   margin-left: 60px;
   color: #515076;
   }
-
-
 
 .prodname {
   font-size: 20px;
