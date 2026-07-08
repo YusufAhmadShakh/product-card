@@ -1,0 +1,76 @@
+body {
+  font-family: 'montserrat', sans-serif;
+  color: #515076;
+  padding: 40px;
+  background-color: #F7F7FA;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+  
+.title {
+  font-size: 70px;
+  background-color: #F7F7FA;
+  font-weight: 700;
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+  color:#353451
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.cards {
+  height: 530px;
+  width: 300px;
+  padding: 20px;
+  margin: 15px;
+  background: rgb(234, 235, 239);
+}
+
+.skin-type {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.text {
+  text-align: left;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#515076;
+  margin-bottom: 5px;
+}
+
+.price1 {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.price2 {
+  display: inline-flex;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 60px;
+  color: #515076;
+  }
+
+.prodname {
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-top: 5px;
+}
+
+.descr {
+  font-weight: 400;
+  margin: 0;
+}
