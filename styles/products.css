@@ -1,0 +1,67 @@
+.products {
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.products__list {
+  width: 340;
+  height: 573;
+  top: 408px;
+  left: 85px;
+  border-width: 1px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.products__cards {
+  height: 573px;
+  width: 340px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #F7F7FA;
+}
+
+.products__image {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+.products__skin-type {
+  margin-bottom: 25px;
+  color: #A5A3B9;
+  font-weight: 400;
+}
+
+.products__text {
+  text-align: left;
+  font-weight: 400;
+  color:#515076;
+  margin-bottom: 5px;
+}
+
+.products__compound {
+  padding-left: 15px;
+}
+.products__price {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.products__name {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-bottom: 15px;
+}
+
+.products__description {
+  font-weight: 400;
+}
