@@ -19,7 +19,7 @@
 }
 
 .products__cards {
-  height: 573px;
+
   width: 340px;
   padding: 20px;
   border-radius: 15px;
@@ -32,9 +32,17 @@
   width: 100%;
 }
 .products__skin-type {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #A5A3B9;
   font-weight: 400;
+}
+
+.products__name {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-bottom: 10px;
 }
 
 .products__text {
@@ -52,14 +60,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-}
-
-.products__name {
-  font-family: "Montserrat-Bold";
-  font-size: 20px;
-  line-height: 27px;
-  color: #515076;
-  margin-bottom: 15px;
 }
 
 .products__description {
