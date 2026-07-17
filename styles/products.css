@@ -5,10 +5,6 @@
 }
 
 .products__list {
-  width: 340;
-  height: 573;
-  top: 408px;
-  left: 85px;
   border-width: 1px;
   list-style: none;
   display: flex;
@@ -19,7 +15,6 @@
 }
 
 .products__cards {
-
   width: 340px;
   padding: 20px;
   border-radius: 15px;
