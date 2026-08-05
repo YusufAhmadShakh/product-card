@@ -33,3 +33,18 @@ body {
   color:#515076;
 }
 
+.button-green {
+  background-color: #6bed96;
+}
+
+.buttons-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.buttons {
+  border-radius: 10px;
+  border-width: 1px;
+}
