@@ -48,3 +48,4 @@ const titleToLog = document.querySelector(".main-title")
 titleToLog.addEventListener("mouseenter", () => {
   console.log(titleToLog.textContent);
 })
+
