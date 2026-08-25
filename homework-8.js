@@ -127,5 +127,3 @@ const isSalafsAgeBooks = (array) => {
 // Проверяем работу:
 const updatedBooks = isSalafsAgeBooks(booksAll);
 console.log(updatedBooks);
-
-//Пункт 10 не усвоен, даже с помощью ИИ((
