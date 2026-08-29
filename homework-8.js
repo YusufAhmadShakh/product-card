@@ -37,7 +37,7 @@ checkMaxSpeed(car);
 
 
 //П.6 Ф-ция, кот.получ.перв.арг-м объект, вторым - св-во обЪекта и выв.его знач.)
-function showObjProperty (user, job) {
+function showObjProperty (user) {
   console.log(`Профессия пользователя ${user.firstName} ${user.lastName} - ${user.job}`)
 }
 
@@ -73,7 +73,7 @@ const booksArray = [
   
   {
   title: "Muhtasar",
-  author: "al-Khiraky",
+  author: "al-Khiraki",
   year: 334,
   genre: "Fiqh"
   },
@@ -92,7 +92,7 @@ booksArray.push( {
 const booksInstrumental = [
   {
   title: "Risalah",
-  author: "Muhammad ben Idris al-Shafe'ee",
+  author: "Muhammad ben Idris al-Shafi'i",
   year: 204,
   genre: "Usul al-Fiqh"
   },
@@ -106,7 +106,7 @@ const booksInstrumental = [
 
   {
   title: "Alfeeya Ibn Malik",
-  author: "Muhammad ben Malik at-Tai al-Andalusee",
+  author: "Muhammad ben Malik at-Tai al-Andalusi",
   year: 660,
   genre: "arabic grammar"
   }
