@@ -37,15 +37,17 @@ checkMaxSpeed(car);
 
 
 //П.6 Ф-ция, кот.получ.перв.арг-м объект, вторым - св-во обЪекта и выв.его знач.)
-function showObjProperty (user) {
-  console.log(`Профессия пользователя ${user.firstName} ${user.lastName} - ${user.job}`)
+function showObjProperty (obj, property) {
+  console.log(obj[property])
 }
 
-showObjProperty(user, [user.job]);
+showObjProperty(user, 'mail');
 
 //П.7 Массив,сод.назв-я прод-в (прос.строки)
-const array1 = ["object1", "obj2", 6386]
-
+const array1 = [
+    "Шашлык", 
+    "Учпочмак", 
+    "Менемен"]
 
 //П.8 Массив из об-в, предс.собой книги (назв.,авт.,г/в,цв.обл.,жан.), 3-5кн.,
       //зат.доб. мет-м 'массив' еще 1кн в кон.спис.
@@ -117,13 +119,14 @@ const booksAll = [...booksArray, ...booksInstrumental]
 
 //П.10
 // Функция принимает массив и возвращает новый массив с измененными объектами
-const isSalafsAgeBooks = (array) => {
-  return array.map(book => ({
+const addIsSalafsAge = (x) => {
+  return x.map(book => ({
     ...book,
-    isSalafsAge: book.year < 257
+    isSalafsAge: book.year <= 257
   }));
 };
 
-// Проверяем работу:
-const updatedBooks = isSalafsAgeBooks(booksAll);
+const updatedBooks = addIsSalafsAge (booksAll);
 console.log(updatedBooks);
+
+//function isSalafsAge() = 
