@@ -128,5 +128,4 @@ const addIsSalafsAge = (x) => {
 
 const updatedBooks = addIsSalafsAge (booksAll);
 console.log(updatedBooks);
-
-//function isSalafsAge() = 
+ 
