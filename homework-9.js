@@ -1,7 +1,7 @@
 //Ch.1
 //p.1-4
 const arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const arrNumbers2 = arrNumbers.slice(4,10)
+const arrNumbers2 = arrNumbers.filter(n => n >= 5)
 console.log(arrNumbers2)
 const arrStrings = [
   "Акыда",
@@ -22,7 +22,7 @@ else {
 }
 
 function reversingArray (array) {
-  return array.reverse()
+  return [...array].reverse();
 }
 
 const revArr1 = reversingArray(arrNumbers2)
@@ -31,11 +31,14 @@ console.log(`${revArr1} ${revArr2}`)
 
 //Ch.2 
 import { arrComments } from './comments.js';
-//console.log(arrComments)
+console.log(`Массив с исходными PostID `, arrComments)
 
 const arrCommentsWithDotCom = arrComments.filter(comment => comment.email.includes('.com'))
-const setPostId = arrComments.map(comment => comment.id <= 5 ? comment.postId = 2 : 1)
-console.log(`Установление PostID в зависимости от порядкового номера`, setPostId)
+const setPostId = arrComments.map(comment => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2 : 1
+}))
+console.log(`Массив с измененными PostID`, setPostId)
 
 //p.9
 const filteredComments = arrComments.map(({ name, email }) => ({ name, email }));
