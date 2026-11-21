@@ -12,11 +12,7 @@
   
 	<h1 class="main-title">Выберите свой продукт</h1>
   <div class="buttons-bar">
-    <button id="button-change-cards-color" class="buttons">Сменить цвет первой карточки</button>
-    <button id="button-change-all-cards-color" class="buttons">Сменить цвет всех карточек</button>
-    <button id="button-open-google" class="buttons">Перейти в Google</button>
-    <button id="button-output-console-log" class="buttons">Вывести сообщение в консоль</button>
-    <button id="button-just" class="buttons">Просто кнопка</button>
+    <button id="open-register" class="button-registration">Регистрация</button>
   </div>
 
   <ul id="products-list"></ul>
@@ -32,12 +28,136 @@
     </li>
   </template>
 
-  <script src="main.js" defer></script>
-  <script src="homework-7.js"></script>
-  <script src="homework-8.js"></script>
-  <script type="module" src="homework-9.js"></script>
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <!-- Левый блок -->
+    <div class="footer-block footer-left">
+      <h2 class="footer-title">Product cards</h2>
+      <p class="footer-subtitle">У нас лучшие товары для кожи</p>
+      <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <img src="/img/telegram.svg" alt="Telegram" width="21" height="18"/>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <img src="/img/vk.svg" alt="VK" width="24" height="14"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+    </div>
+
+    <!-- Центральный блок -->
+    <div class="footer-block footer-center">
+      <form class="email-form" id="subscribe-form" action="#" method="post">
+        <p class="subscribe-label">Подпишись на наши акции</p>
+        <input type="email" id="email-input" placeholder="Введите ваш email" required>
+        <button type="submit" class="subscribe-btn">Подписаться</button>
+      </form>
+    </div>
+
+    <!-- Правый блок -->
+    <div class="footer-block footer-right">
+      <h3 class="footer-links-title">Быстрые ссылки</h3>
+      <ul class="footer-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/shop">Магазин</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<div class="modal"
+  id="register-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="register-title">
+    <button class="modal__close"
+    type="button"
+    id="close-register"
+    aria-label="Закрыть">x</button>
+    <h2 class="modal__title" id="register-title">Регистрация</h2>
+    <form class="modal__form" id="register-form" novalidate>
+      <label class="modal__label" for="reg-firstName">Имя</label>
+      <input 
+        class="modal__input"
+        id="reg-firstName"
+        name="firstName"
+        type="text"
+        placeholder="Иван"
+        required
+        minlength="2"
+        />
+
+      <label class="modal__label" for="reg-lastName">Фамилия</label>
+      <input 
+        class="modal__input"
+        id="reg-lastName"
+        name="lastName"
+        type="text"
+        placeholder="Иванов"
+        required
+        minlength="2"
+        />
+
+      <label class="modal__label" for="reg-birthDate">Дата рождения</label>
+      <input 
+        class="modal__input"
+        id="reg-birthDate"
+        name="birthDate"
+        type="date"
+        required
+        />
+
+      <label class="modal__label" for="reg-login">Логин</label>
+      <input 
+        class="modal__input"
+        id="reg-login"
+        name="login"
+        type="text"
+        placeholder="user_name"
+        required
+        minlength="3"
+        pattern="[A-Za-z0-9_]+"
+        />
+
+      <label class="modal__label" for="reg-password">Пароль</label>
+      <input 
+        class="modal__input"
+        id="reg-password"
+        name="password"
+        type="password"
+        placeholder="Минимум 6 символов"
+        required
+        minlength="6"
+        />
+
+      <label class="modal__label" for="reg-passwordRepeat">Повторите пароль</label>
+      <input class="modal__input"
+      id="reg-passwordRepeat"
+      name="passwordRepeat"
+      type="password"
+      placeholder="Повторите пароль"
+      required
+      minlength="6"
+      />
+
+      <button class="modal__btn" type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+
   <script type="module" src="homework-10.js"></script>
+  <script type="module" src="homework-11.js"></script>
   <script type="module" src="product-cards.js"></script>
   <script type="module" src="comments.js"></script>
+
 </body>
 </html> 

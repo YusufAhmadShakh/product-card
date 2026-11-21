@@ -1,9 +1,8 @@
 import { arrProducts } from "./product-cards.js";
 
 const productsTemplate = document.getElementById("products-template");
-const productsList = document.getElementById("products-list"); // используем этот элемент
+const productsList = document.getElementById("products-list"); 
 
-// Проверь, что в arrProducts поля называются именно так: image, skinType, compound[], price
 const createProductCard = (product) => `
   <div class="product">
     <img src="${product.img}" alt="${product.name}" />
